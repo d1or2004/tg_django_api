@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<ul>
+    {% for user in users%}
+    <li>
+        Full Name: {{user.full_name}} <br>
+        Username: <a href="https://t.me/">{{user.username}}</a> <br>
+       Telegram Id: {{user.telegram_id}}<br> <br>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
